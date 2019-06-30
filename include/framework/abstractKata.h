@@ -17,6 +17,7 @@ class AbstractKata{
         virtual void run(std::list<std::string> args) = 0;
     protected:
         bool correctNumberOfParams (std::list<std::string> listOfArgs,int expectedArgCount, bool exactlyEqualTo);
+        float convertToFloat(std::string stringToConvert);
 };
 #else
 #endif

@@ -22,7 +22,7 @@ OBJECTS = $(SOURCES:$(SRC_PATH)/%.$(SRC_EXT)=$(BUILD_PATH)/%.o)
 DEPS = $(OBJECTS:.o=.d)
 
 # flags #
-COMPILE_FLAGS = -std=c++11 -Wall -Werror -ggdb
+COMPILE_FLAGS = -std=c++17 -Wall -Werror -ggdb
 INCLUDES = -I include/framework -I include/kata -I /usr/local/include
 # Space-separated pkg-config libraries used by this project
 LIBS =
