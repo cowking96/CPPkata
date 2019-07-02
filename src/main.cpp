@@ -23,7 +23,7 @@ int main( int argc, const char* argv[] )
 
 	//create kata
 	AbstractKata* kata = KataFactory::getKata(kataName);
-
+	
 	//run the kata
 	kata->run(args);
 
