@@ -20,9 +20,7 @@ class AbstractKata{
     protected:
         bool correctNumberOfParams (std::list<std::string> listOfArgs,int expectedArgCount, bool exactlyEqualTo);
         float convertToFloat(std::string stringToConvert);
-        int convertToInt (std::string stringToConvert);
-        
-       
+        int convertToInt (std::string stringToConvert);     
 };
 #else
 #endif

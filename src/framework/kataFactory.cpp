@@ -4,6 +4,7 @@
 #include "findStringKata.h"
 #include "jumpingNumberKata.h"
 #include "marketKata.h"
+#include "missingNumberKata.h"
 #include <iostream>
 
 AbstractKata* KataFactory::getKata(string kataName) {
@@ -26,6 +27,10 @@ AbstractKata* KataFactory::getKata(string kataName) {
 
     if (kataName == "marketkata"){
         return new MarketKata();
+    }
+
+    if (kataName == "missingnumberkata"){
+        return new MissingNumberKata();
     }
 
     else{
